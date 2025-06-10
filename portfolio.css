@@ -1,0 +1,166 @@
+
+
+* { margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(211, 190, 218);
+}
+
+#nav { background-color: rgb(201, 155, 212);
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 12px;
+  position:sticky;
+  width: 100%;
+  
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+}
+
+a {
+  font-size: 13px;
+
+  color: black;
+  text-decoration: none;
+}
+.heroimages { height:200px;
+  width: 200px;
+  
+  
+ 
+  border: 3px solid white;
+  border-radius: 50%;
+  position: relative;
+  bottom: 10px;
+  
+}
+.about-image { height: 200px;
+width: 200px;}
+#hero { padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+  padding-top: 65px;
+}
+
+.left{
+  display: flex;
+}
+.ten{
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+}
+#hero button{ color: white; background-color:rgb(178, 114, 176);
+  padding: 5px;  border-radius: 5px;
+  cursor: pointer;
+
+}
+#hero button:hover { background-color:
+   rgb(163, 45, 209);}
+
+/* Project Section Start */
+
+.title { margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+p.sub-title { text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-white);
+  opacity: 0.9;
+}
+
+.project-card { 
+  border: 2px solid var(--color-accent) ;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.project-image {
+  overflow: hidden;
+  width:90%;
+ 
+}
+
+.project-card img {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  transition: 0.3s all ease-in-out;
+}
+
+.project-card .card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 4px 14px;
+}
+
+.project-card p.card-description {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.project-card a {
+  text-decoration: none;
+  font-size: 18px;
+  background-color: var(--color-accent);
+  width: fit-content;
+  padding: 3px;
+  font-family: "Chivo", sans-serif;
+  border-radius: 2px;
+  color: var(--secondary-color);
+  box-shadow: 10px 0 0 inset var(--color-accent);
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Project Section End */
+/* About Section start*/
+section#about{ display: flex;
+  justify-content: space-between;}
+  
+.detail{
+  display: flex; flex-direction: column;
+  text-align: center;
+  padding: 24px;
+}
+.about-image{
+   border-radius: 50%;
+}
+/* About Section End*/
+/*  Contact Section Start */
+#Contact{ background-color: rgb(201, 155, 212); padding: 24px;
+text-align: center;}
+.subbmit{  color: rgb(251, 247, 247);
+  border-radius: 5px;
+   background-color: rgb(187, 102, 215);}
+   .subbmit:hover{
+    cursor: pointer;
+     background-color: rgb(163, 45, 209);}
+     .email{ position: relative;
+    left: 2px;}
+
+  .last{ background-color:rgb(201, 155, 212);}
+  #message{ position: relative;
+  right: 9px;}
